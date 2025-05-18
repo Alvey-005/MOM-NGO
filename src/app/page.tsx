@@ -1,4 +1,7 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 export default function Home() {
   return (
@@ -97,6 +100,13 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+
+
+        <Button size='lg'>Book a Session</Button>
+        <Button>Book a Session</Button>
+        <Button variant='outline'>Book a Session <FaArrowRightLong />        </Button>
+        <Button variant='outline' size='lg'>Book a Session <FaArrowRightLong /></Button>
+        <Button variant='link' size='lg'>Book a Session <FaArrowRightLong /></Button>
       </footer>
     </div>
   );
