@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
+import ContactSection from "@/components/layout/contact-section";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <div className="font-quicksand">
           <Header />
           {children}
+          <ContactSection />
         </div>
       </body>
     </html>
