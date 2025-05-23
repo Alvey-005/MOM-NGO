@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import ContactSection from "@/components/layout/contact-section";
+import Footer from "@/components/layout/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,11 +34,12 @@ export default function RootLayout({
       <body
         className={`${quicksand.variable} ${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <div className="font-quicksand">
+        {/* <div className="font-quicksand"> */}
           <Header />
           {children}
           <ContactSection />
-        </div>
+          <Footer/>
+        {/* </div> */}
       </body>
     </html>
   );
