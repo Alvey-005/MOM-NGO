@@ -165,6 +165,10 @@
   --color-page-heading-background: #FFD96A;
   --color-about-us-background: #FCFBF7;
   --testimonial-border: #D9DADB;
+
+
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 160rem;
 }
 
 .dark {
@@ -208,4 +212,15 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.core-container{
+  @apply px-5 md:px-10 lg:px-25 xl:px-[120px] 2xl:px-[200px] 3xl:px-[450px]
+}
+.core-container-left{
+  @apply pl-5 md:pl-10 lg:pl-25 xl:pl-[120px] 2xl:pl-[200px] 3xl:pl-[450px]
+}
+.core-container-right{
+  @apply pr-5 md:pr-10 lg:pr-25 xl:pr-[120px] 2xl:pr-[200px] 3xl:pr-[450px]
 }

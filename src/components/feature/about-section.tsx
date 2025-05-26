@@ -22,16 +22,18 @@ export default function AboutSection({
     { value: "20+", label: "International Awards" },
   ];
   return (
-    <section className={cn(`w-full  flex items-center  gap-20 pr-[144px] pl-[175px] ${variant === 'alternative' && 'bg-about-us-background'}`, className)}>
+    <section className={cn(`w-full  flex flex-col xl:flex-row items-center  
+    gap-20 
+    ${variant === 'alternative' && 'bg-about-us-background'}`, className)}>
       {/* Images Section */}
-      <div className="relative flex-shrink-0">
-        <div className="relative z-10">
+      <div className="relative flex-shrink-0 w-full lg:w-[unset] px-2 xl:ml-20">
+        <div className="relative z-10 w-full flex justify-end">
           <Image
             src="/images/about-us-1.png"
             alt="Parent and child 1"
             width={425}
             height={485}
-            className=" object-cover  w-[425px] h-[485]"
+            className=" object-cover w-full md:size-[70%] lg:w-[425px] h-full  lg:h-[485px]"
           />
           <div className="absolute -right-6 -top-6 z-30 ">
             <Image
@@ -42,21 +44,22 @@ export default function AboutSection({
             />
           </div>
         </div>
-        <div className="absolute left-[-80px] bottom-[-40px] z-20">
+        <div className="absolute left-[-10px] md:left-[100px] lg:left-[-80px] bottom-[-45px] z-20">
           <div className="relative">
             <Image
               src="/images/about-us-2.png"
               alt="Parent and child 2"
               width={297}
               height={358}
-              className=" w-[297px] h-[358px] shadow-lg object-cover object-bottom"
+              className="w-[200px] md:w-[297px] h-[240px] md:h-[358px] shadow-lg object-cover object-bottom"
             />
-            <div className="absolute left-[-45px] bottom-[-45px] z-30 ">
+            <div className="absolute left-[-22px] bottom-[-22px] md:left-[-45px] md:bottom-[-45px] z-30 ">
               <Image
                 src="/about-us-svg/about-us-bottom-left.svg"
                 alt="svg"
                 width={90}
                 height={90}
+                className="size-[45px] md:size-[90px]"
               />
             </div>
           </div>

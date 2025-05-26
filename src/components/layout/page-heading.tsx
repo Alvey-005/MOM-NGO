@@ -16,7 +16,7 @@ const PageHeading = ({
   return (
     <div
       className={cn(
-        `pt-[70px] pb-[100px] bg-page-heading-background space-y-3`,
+        `pt-8 pb-10 md:pt-[70px] md:pb-[100px] bg-page-heading-background space-y-3`,
         className
       )}
       {...props}

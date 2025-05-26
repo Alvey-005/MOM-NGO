@@ -12,10 +12,10 @@ export default function MissionSection({
   return (
     <section className={cn("w-full", className)}>
       <div className="grid md:grid-cols-2 gap-18 items-center">
-        <div className="space-y-2 pr-18">
+        <div className="space-y-2 xl:pr-18">
           <h2 className="text-primary font-medium text-lg">Our Mission</h2>
           <Heading>
-            Building a Brighter <br/> Future for Reliable ChildCare
+            Building a Brighter  Future for Reliable ChildCare
           </Heading>
           <p className="text-accent-500 leading-[1.5] mt-2 ">
             We are dedicated to helping Child thrive, succeed, and find fulfillment in all aspects of their lives.
